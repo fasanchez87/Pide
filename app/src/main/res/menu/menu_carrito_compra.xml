@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/ic_busqueda_producto"
+        android:icon="@drawable/ic_finder_icon_final"
+        android:orderInCategory="100"
+        android:title="Search..."
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/MenuActionCarritoCompras"
+        android:icon="@drawable/ic_carrito_compra"
+        android:orderInCategory="100"
+        android:title="Cerrar Sesión"
+        app:actionLayout="@layout/layout_carrito_compra"
+        app:showAsAction="always" />
+
+</menu>

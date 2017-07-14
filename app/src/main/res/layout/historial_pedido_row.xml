@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewCompra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardElevation="3dp"
+        card_view:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="7dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/imagenEmpresaHistorialCompra"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        card_view:srcCompat="@drawable/jj" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombreEmpresaHistorialCompra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jhonson and Jhonson"
+                        android:textSize="@dimen/feed_item_profile_name"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp">
+
+                        <TextView
+                            android:id="@+id/valorUnitaxxxrioProductoCompra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Aceptado: "
+                            android:textSize="@dimen/feed_item_timestamp" />
+
+                        <TextView
+                            android:id="@+id/fechaSolicitudProductoHistorial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="17 jul. 2017"
+                            android:textSize="@dimen/feed_item_timestamp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/valorUxwarioProductoCompra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Aceptado: "
+                            android:textSize="@dimen/feed_item_timestamp" />
+
+                        <TextView
+                            android:id="@+id/fechaAceptadoProductoHistorial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="17 jul. 2017"
+                            android:textSize="@dimen/feed_item_timestamp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp">
+
+                        <TextView
+                            android:id="@+id/valotarioProductoCompra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Despachado: "
+                            android:textSize="@dimen/feed_item_timestamp" />
+
+                        <TextView
+                            android:id="@+id/fechaDespachoProductoHistorial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="17 jul. 2017"
+                            android:textSize="@dimen/feed_item_timestamp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp">
+
+                        <TextView
+                            android:id="@+id/valorUxazxxnitarioProductoCompra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Entregado: "
+                            android:textSize="@dimen/feed_item_timestamp" />
+
+                        <TextView
+                            android:id="@+id/fechaEntregadoProductoHistorial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="17 jul. 2017"
+                            android:textSize="@dimen/feed_item_timestamp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearCancelacionPedidoCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/valwewqeqworUxazx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Cancelado: "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/feed_item_timestamp" />
+
+                        <TextView
+                            android:id="@+id/fechaCanceladoProductoHistorial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="17 jul. 2017"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/feed_item_timestamp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:baselineAligned="false"
+                    android:paddingRight="8dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/labelPedidoAceptadoHistorial"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_corner_ahorro"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:text="Aceptado"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="10.5sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/labelPedidoDespachadoHistorial"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_corner_naranja"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:text="Despachado"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="10.5sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/labelPedidoEntregadoHistorial"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_corner_verde"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:text="Entregado"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="10.5sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/labelPedidoCanceladoClienteHistorial"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_corner_ahorro"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:text="Cancelado"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="10.5sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

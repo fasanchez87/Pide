@@ -1,0 +1,218 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/nombreSedeLayoutComprar"
+    android:layout_marginBottom="7dp"
+    android:orientation="vertical">
+<!--
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:paddingLeft="33dp">-->
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imagen_detalle_producto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:transitionName="some"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_not_image_found"
+        android:layout_below="@+id/linearPago"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBarDetalleProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:layout_gravity="center"
+        android:numStars="1"
+        android:stepSize="1"
+        android:theme="@style/RatingBar"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/linearPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreSedeLayoutComprar"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nombre_producto_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Neutrogena Toallitas Desmaquillantes Normales"
+            android:textColor="#909090"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cantidad_producto_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="X25"
+            android:textColor="#909090"
+            android:textSize="17sp"
+             />
+
+        <TextView
+            android:id="@+id/precio_producto_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="$10.000"
+            android:textColor="#909090"
+            android:textSize="17sp"
+             />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearPago"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       >
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearCantidadProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/botonIncrementarProducto"
+                android:layout_width="37dp"
+                android:layout_height="match_parent"
+                android:onClick="increment"
+                android:src="@drawable/ic_plus"
+                android:text="+"
+                android:textSize="25sp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/contadorProducto_detalle"
+                android:layout_toEndOf="@+id/contadorProducto_detalle" />
+               />
+
+            <TextView
+                android:id="@+id/contadorProducto_detalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="0"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/botonDecrementarProducto"
+                android:layout_width="37dp"
+                android:layout_height="match_parent"
+                android:onClick="increment"
+                android:src="@drawable/ic_minus"
+                android:text="+"
+                android:textSize="25sp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/contadorProducto_detalle"
+                android:layout_toStartOf="@+id/contadorProducto_detalle"  />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="7dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/botonAgregarBolsa"
+            android:layout_width="180dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="9dp"
+            android:background="@color/colorPrimary"
+            android:text="AGREGAR A BOLSA"
+            android:visibility="gone"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/botonRemoverBolsa"
+            android:layout_width="180dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="9dp"
+            android:background="#ffa83f"
+            android:text="REMOVER"
+            android:visibility="gone"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/botonAjustarBolsa"
+            android:layout_width="180dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="9dp"
+            android:background="#3cb371"
+            android:text="MODIFICAR"
+            android:visibility="gone"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/botonAgregarBolsaDeshabilitado"
+            android:layout_width="180dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="9dp"
+            android:background="#B0B0B0"
+            android:text="AGREGAR A BOLSA"
+            android:visibility="visible"
+            android:enabled="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

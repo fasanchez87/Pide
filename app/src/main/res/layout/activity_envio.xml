@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlanco">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_above="@+id/linearLayoutGestionPedido">
+
+                <EditText
+                    android:id="@+id/edit_text_direccion_envio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#484b48"
+                    android:theme="@style/EditTextFondoBlanco"
+                    android:drawablePadding="10dp"
+                    android:hint="Dirección de envío"
+                    android:drawableLeft="@drawable/ic_envio"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:textColor="#484b48"
+                    android:textColorHint="#484b48" />
+
+                <EditText
+                    android:id="@+id/edit_text_alguna_novedad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#484b48"
+                    android:theme="@style/EditTextFondoBlanco"
+                    android:drawableLeft="@drawable/ic_cupon"
+                    android:drawablePadding="10dp"
+                    android:hint="¿Alguna novedad?"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="#484b48"
+                    android:textColorHint="#484b48" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/check_aceptar_terminos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:checked="false"
+                        android:theme="@style/themeCheckbox" />
+
+                    <TextView
+                        android:id="@+id/editTextTerminos"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Acepto los términos y condiciones"
+                        android:textColor="#484b48" />
+
+                    <Space
+                        android:layout_width="7dp"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutGestionPedido"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+               >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#484b48">
+                    <TextView
+                        android:id="@+id/text_dialogxxx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingRight="9dp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="9dp"
+                        android:layout_weight="0"
+                        android:gravity="left"
+                        android:text="Ahorro"
+                        android:background="@drawable/text_view_corner_ahorro"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/valorAhorroEnvio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="1dp"
+                        android:background="@drawable/text_view_corner_ahorro"
+                        android:gravity="right"
+                        android:text="$13.800"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="20sp"
+                        android:layout_alignBaseline="@+id/text_dialogxxx"
+                        android:layout_alignBottom="@+id/text_dialogxxx"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lieqweqwenearPago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nombreSedeLayoutComprar"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="20dp"
+                    android:background="#484b48">
+
+                    <TextView
+                        android:id="@+id/teqweewvfdgqweext_dialogxxx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Total"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/valorTotalCompraEnvio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left"
+                        android:text="$180.000"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/botonAceptarEnvio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="ACEPTAR"
+                    android:textColor="@color/colorBlanco" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    <!--  <android.support.design.widget.FloatingActionButton
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/fab"
+          app:elevation="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end|bottom"
+          app:backgroundTint="@color/colorFloatingButton"
+          android:layout_margin="@dimen/fab_margin"
+          android:tint="@color/colorBlanco"
+          android:src="@android:drawable/ic_input_add"/>-->
+
+

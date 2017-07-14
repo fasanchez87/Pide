@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "357552452302",
+    "firebase_url": "https://pide-71eda.firebaseio.com",
+    "project_id": "pide-71eda",
+    "storage_bucket": "pide-71eda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357552452302:android:c308ff4014136c59",
+        "android_client_info": {
+          "package_name": "com.ingeniapps.pide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357552452302-45np4j3es4qrr09r1t2eq2k9etgfdjkf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ingeniapps.pide",
+            "certificate_hash": "4c999dd47635ed5aa0c5d3bac563336653ea469d"
+          }
+        },
+        {
+          "client_id": "357552452302-fqdi5pnu50mjj98vh47o29tbattiqs3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvFVKoJUfiI6ojjx_nOpiQHHUcGZQddwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357552452302-fqdi5pnu50mjj98vh47o29tbattiqs3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Pedidos">
+        <menu>
+            <group
+                android:id="@+id/group_1"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_pedir_producto"
+                    android:title="Pide"
+                    app:actionLayout="@layout/menu_counter_noticias" />
+                <item
+                    android:id="@+id/nav_historial"
+                    android:title="Mis Pedidos"
+                     />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Configuración">
+        <menu>
+            <group
+                android:id="@+id/group_2"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_daños"
+                    android:title="Cuenta" />
+              <!--  <item
+                    android:id="@+id/nav_send"
+                    android:title="Configuración" />-->
+            </group>
+        </menu>
+    </item>
+
+
+
+   <!-- <item android:title="Configuración">
+        <menu>
+            <item
+                android:id="@+id/nav_cuenta"
+                android:title="Cuenta" />
+            <item
+                android:id="@+id/nav_compartir"
+                android:title="Compartir" />
+        </menu>
+    </item>-->
+</menu>
